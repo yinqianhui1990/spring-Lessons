@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="spring-lesson1" />
+        <module name="spring-lesson2-aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-lesson1" target="1.5" />
+      <module name="spring-lesson2-aop" target="1.5" />
       <module name="spring-Lessons" target="1.5" />
     </bytecodeTargetLevel>
   </component>

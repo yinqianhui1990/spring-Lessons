@@ -8,10 +8,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yqh.spring</groupId>
-    <artifactId>spring-lesson1</artifactId>
+    <artifactId>spring-lesson2-aop</artifactId>
     <packaging>jar</packaging>
 
-    <name>spring-lesson1</name>
+    <name>spring-lesson2-aop</name>
     <url>http://maven.apache.org</url>
 
     <properties>
