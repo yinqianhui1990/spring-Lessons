@@ -24,11 +24,21 @@
         <processorPath useClasspath="true" />
         <module name="spring-lesson1" />
         <module name="spring-lesson2-aop" />
+        <module name="spring-lesson3-boot" />
+        <module name="spring-lesson4-smvc" />
+        <module name="spring-lesson5-jdbc" />
+        <module name="spring-lesson6-orm-mybatis" />
+        <module name="spring-lesson7-cache" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-lesson1" target="1.5" />
       <module name="spring-lesson2-aop" target="1.5" />
+      <module name="spring-lesson3-boot" target="1.5" />
+      <module name="spring-lesson4-smvc" target="1.5" />
+      <module name="spring-lesson5-jdbc" target="1.5" />
+      <module name="spring-lesson6-orm-mybatis" target="1.5" />
+      <module name="spring-lesson7-cache" target="1.5" />
       <module name="spring-Lessons" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-lesson4-smvc:war">
+    <output-path>$PROJECT_DIR$/spring-lesson4-smvc/target</output-path>
+    <root id="archive" name="spring-lesson4-smvc.war">
+      <element id="artifact" artifact-name="spring-lesson4-smvc:war exploded" />
+    </root>
+  </artifact>
+</component>

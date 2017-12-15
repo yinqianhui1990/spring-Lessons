@@ -3,6 +3,10 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-lesson4-smvc" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-lesson6-orm-mybatis" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

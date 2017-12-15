@@ -5,6 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/spring-Lessons.iml" filepath="$PROJECT_DIR$/spring-Lessons.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-lesson1/spring-lesson1.iml" filepath="$PROJECT_DIR$/spring-lesson1/spring-lesson1.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-lesson2-aop/spring-lesson2-aop.iml" filepath="$PROJECT_DIR$/spring-lesson2-aop/spring-lesson2-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-lesson3-boot/spring-lesson3-boot.iml" filepath="$PROJECT_DIR$/spring-lesson3-boot/spring-lesson3-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-lesson4-smvc/spring-lesson4-smvc.iml" filepath="$PROJECT_DIR$/spring-lesson4-smvc/spring-lesson4-smvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-lesson5-jdbc/spring-lesson5-jdbc.iml" filepath="$PROJECT_DIR$/spring-lesson5-jdbc/spring-lesson5-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-lesson6-orm-mybatis/spring-lesson6-orm-mybatis.iml" filepath="$PROJECT_DIR$/spring-lesson6-orm-mybatis/spring-lesson6-orm-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-lesson7-cache/spring-lesson7-cache.iml" filepath="$PROJECT_DIR$/spring-lesson7-cache/spring-lesson7-cache.iml" />
     </modules>
   </component>
 </project>
