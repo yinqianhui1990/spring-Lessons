@@ -21,7 +21,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>4.2.1.RELEASE</spring.version>
+        <spring.version>4.2.3.RELEASE</spring.version>  <!--这个要与springboot的版本保持一致，不然会冲突-->
         <logback.version>1.1.7</logback.version>
         <slf4j.version>1.7.21</slf4j.version>
     </properties>
@@ -83,11 +83,27 @@
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.11</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.20</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.9</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <dependencies>
