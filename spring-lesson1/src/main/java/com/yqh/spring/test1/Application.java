@@ -18,5 +18,7 @@ public class Application {
         User user=(User)applicationContext.getBean("user");
         logger.info("用户姓名：{}" , user.getUserName());
         logger.info("用户密码：{}", user.getPassWord());
+        User user2=(User)applicationContext.getBean("user");
+        System.out.println(user==user2);
     }
 }

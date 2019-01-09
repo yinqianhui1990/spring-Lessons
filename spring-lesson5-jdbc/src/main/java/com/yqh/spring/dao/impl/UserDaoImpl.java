@@ -50,4 +50,12 @@ public class UserDaoImpl implements UserDao{
         }
         return userList;
     }
+
+    public User getUserByNameOtherDataBase(String name) {
+        return jdbcTemplate.queryForObject("select * from clis_wuhan.com_user where name= ? ", new Object[]{name}, new RowMapper<User>() {
+            public User mapRow(ResultSet resultSet, int i) throws SQLException {
+                return new User(resultSet.getString("name"),resultSet.getString("password"));
+            }
+        });
+    }
 }

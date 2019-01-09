@@ -22,4 +22,6 @@ public interface UserDao {
 
     public List<User> getUserList();
 
+    public User getUserByNameOtherDataBase(String name);
+
 }

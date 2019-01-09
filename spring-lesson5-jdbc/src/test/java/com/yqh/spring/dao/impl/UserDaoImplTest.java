@@ -43,4 +43,13 @@ public class UserDaoImplTest {
             logger.info((user.getPassWord()));
         }
     }
+
+    @Test
+    public void testGetUserByNameTest() throws Exception {
+        User user= userDaoImpl.getUserByNameOtherDataBase("");
+        if (user!=null){
+            logger.info(user.getUserName());
+            logger.info((user.getPassWord()));
+        }
+    }
 }

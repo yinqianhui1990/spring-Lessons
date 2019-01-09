@@ -13,6 +13,8 @@
         <module>spring-lesson5-jdbc</module>
         <module>spring-lesson6-orm-mybatis</module>
         <module>spring-lesson7-cache</module>
+
+
     </modules>
     <packaging>pom</packaging>
 
@@ -24,6 +26,10 @@
         <spring.version>4.2.3.RELEASE</spring.version>  <!--这个要与springboot的版本保持一致，不然会冲突-->
         <logback.version>1.1.7</logback.version>
         <slf4j.version>1.7.21</slf4j.version>
+        <jedis.version>2.9.0</jedis.version>
+        <data.redis.version>1.8.1.RELEASE</data.redis.version>
+        <lombok.version>1.16.16</lombok.version>
+        <jackson.version>2.6.7</jackson.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -88,6 +94,16 @@
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.11</version>
@@ -121,6 +137,21 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
     </dependencies>
 
