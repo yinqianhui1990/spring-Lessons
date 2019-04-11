@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	   xmlns:repository="http://www.springframework.org/schema/data/repository"
+	   xmlns:context="http://www.springframework.org/schema/context"
+
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                    http://www.springframework.org/schema/context 
+                    http://www.springframework.org/schema/context/spring-context-4.3.xsd
+                    http://www.springframework.org/schema/data/mongo 
+                    http://www.springframework.org/schema/data/mongo/spring-mongo-1.8.xsd
+                    http://www.springframework.org/schema/data/repository 
+                    http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd">
+
+	<!-- 加载mongodb的配置属性文件 -->
+	<context:property-placeholder location="classpath:config/mongo.properties" />
+	<context:component-scan base-package="com.yqh.mongo"/>
+	<mongo:mongo-client host="${mongo.host}" port="${mongo.port}" id="mongo">
+		<mongo:client-options
+				write-concern="${mongo.writeconcern}"
+				connect-timeout="${mongo.connectTimeout}"
+				socket-keep-alive="${mongo.socketKeepAlive}" />
+	</mongo:mongo-client>
+
+	<!-- mongo:db-factory dbname="database" mongo-ref="mongo" / -->
+	<!--这里的dbname就是自己的数据库/collection的名字-->
+	<mongo:db-factory id="mongoDbFactory" dbname="yqh" mongo-ref="mongo" />
+
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+	</bean>
+	<!-- Activate Spring Data MongoDB repository support
+	如果要用到继承MongoRepository 这个接口，则要扫描自己接口文件，
+	相当于扫描mybaytis中的mapper-->
+	<mongo:repositories base-package="com.yqh.mongo.UserRespository"
+						mongo-template-ref="mongoTemplate" />
+
+</beans>

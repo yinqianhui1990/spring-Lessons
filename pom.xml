@@ -13,6 +13,7 @@
         <module>spring-lesson5-jdbc</module>
         <module>spring-lesson6-orm-mybatis</module>
         <module>spring-lesson7-cache</module>
+        <module>spring-lesson-mongo</module>
 
 
     </modules>
